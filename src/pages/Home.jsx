@@ -17,7 +17,7 @@ export const loader = async () => {
 function Home() {
   const [withibleProduct, ] = useState();
   return (
-    <div className="w-full">
+    <div className="w-full bg-neutral ">
       <ProductsList withibleProduct={withibleProduct} />
       <div className="flex justify-center my-10">
         {" "}
