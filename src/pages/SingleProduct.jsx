@@ -31,8 +31,8 @@ function SingleProduct() {
   };
 
   return (
-    <div className="h-lvh p-12">
-      <div className="card card-side bg-slate-100 shadow-xl">
+    <div className="h-lvh p-12 ">
+      <div className="card card-side bg-slate-500 shadow-2xl ">
         <figure className="bg-slate-200 ">
           <img
             className="md:max-w-[400px] lg:max-w-[500px]"
@@ -41,7 +41,7 @@ function SingleProduct() {
           />
         </figure>
         <div className="flex flex-col justify-between py-10">
-          <div className="px-10">
+          <div className="px-10 ">
             <h2 className="md:text-xl lg:w-full font-serif font-bold text-4xl text-center mb-10">
               {product.title}
             </h2>
@@ -49,7 +49,7 @@ function SingleProduct() {
               {product.description}
             </p>
 
-            <div className="bg-slate-200 p-5 rounded-[25px] mb-10">
+            <div className="bg-slate-600 p-5 rounded-[25px] mb-10 ">
               <p className="font-semibold font-serif ">Price:</p>
               <p className="font-medium flex gap-10">
                 {(
@@ -66,10 +66,10 @@ function SingleProduct() {
               </p>
             </div>
           </div>
-          <div className="card-actions justify-center items-center bg-base-300 py-3">
+          <div className="card-actions justify-center items-center  py-3">
             <button
               onClick={() => setAmount((prev) => (prev += 1))}
-              className="btn w-10 bg-slate-300 text-xl font-serif font-semibold"
+              className="btn w-10  bg-primary text-xl font-serif font-semibold"
             >
               +
             </button>
@@ -77,7 +77,7 @@ function SingleProduct() {
             <button
               disabled={amount == 0 && true}
               onClick={() => setAmount((prev) => (prev -= 1))}
-              className="btn w-10 bg-slate-300 text-xl  font-serif font-semibold"
+              className="btn bg-primary w-10 text-xl  font-serif font-semibold"
             >
               -
             </button>

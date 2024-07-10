@@ -6,6 +6,7 @@ import { useGlobalContext } from "../hooks/useGlobalContext";
 function TableItem({ product }) {
   const { incrementAmount, decrementAmount, handleDelete } = useGlobalContext();
   return (
+    
     <tr>
       <th>
         <label>

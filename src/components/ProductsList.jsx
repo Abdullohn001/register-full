@@ -9,7 +9,7 @@ function ProductsList({ withibleProduct }) {
   } = useLoaderData();
 
   return (
-    <div className="grid ">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 ">
       {products.slice(0, withibleProduct).map((product) => {
         return <Product key={product.id} product={product} />;
       })}
