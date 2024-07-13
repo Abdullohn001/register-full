@@ -21,17 +21,17 @@ import { useRegister } from "../hooks/useRegister";
 import { useLogin } from "../hooks/useLogin";
 
 function Login() {
-  const farxod = useActionData();
+  const exins = useActionData();
 
   const { isPanding, registerWithGoogle } = useRegister();
 
   const { isPanding: isPandingLogin, signIn } = useLogin();
 
   useEffect(() => {
-    if (farxod) {
-      signIn(farxod.email, farxod.password);
+    if (exins) {
+      signIn(exins.email, exins.password);
     }
-  }, [farxod]);
+  }, [exins]);
 
   return (
     <div className="auth-container">
